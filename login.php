@@ -11,6 +11,7 @@
     </style>
 </head>
 <body>
+
 <?php include 'login_css.php'?>
 <?php
     require('dbcon.php');
@@ -55,9 +56,27 @@
         }
     } else {
 ?>
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: teal;">
+        <div class="container-fluid" style="text-align: center;">
+            <a href="#" class="navbar-brand"><b>Greetings Card Generator</b></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="./index.php" class="nav-item nav-link active">Home</a>
+                </div>
+                
+
+            </div>
+        </div>
+    </nav>
+
+
     <div class="lgin">
     <h1 class="login-title" style="color: white;">Login</h1>
-    <form class="form shadow-lg p-3 mb-5 bg-body rounded" method="post" name="login">
+    <form class="form shadow-lg p-4 mb-6 bg-body rounded" method="post" name="login">
         <input type="email" class="login-input" name="email" placeholder="Email" autofocus="true" required/>
         <input type="password" class="login-input" name="password" placeholder="Password" required/>
         <input type="submit" value="Login" name="submit" class="login-button"/>

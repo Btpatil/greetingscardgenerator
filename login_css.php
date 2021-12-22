@@ -5,12 +5,27 @@
 body{
 	margin: 0;
 	padding: 0;
-	display: flex;
+	/* display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: center; */
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
 	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+.form-inline{
+            display: flex;
+        }
+.lgin{
+	position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .form {
     width: fit-content;
@@ -104,7 +119,7 @@ input{
 	transform: scale(.6);
 }
 */
-a{
+.lgin a{
     list-style: none;
     padding: 8px 12px;
     position: relative;
